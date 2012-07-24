@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <df name="bridge" root=".">
+      <df name="trunk">
+      </df>
+      <in>alias.c</in>
+      <in>alias.h</in>
+      <in>alias_db.c</in>
+      <in>alias_local.h</in>
+      <in>alias_mod.h</in>
+      <in>alias_sctp.h</in>
+      <in>bridge.c</in>
+      <in>ether_aton.c</in>
+      <in>ip_divert.c</in>
+      <in>ip_fw.c</in>
+      <in>ip_fw_nat.c</in>
+      <in>ip_fw_private.h</in>
+      <in>ip_fw_sockopt.c</in>
+      <in>ip_fw_table.c</in>
+      <in>ipfw2.c</in>
+      <in>ipfw2.h</in>
+      <in>strsep.c</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile-bridge.mk</itemPath>
+      <itemPath>makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile-bridge.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>$(MAKE)</buildCommand>
+          <cleanCommand>$(MAKE)</cleanCommand>
+          <executablePath>./bridge</executablePath>
+          <cTool>
+            <incDir>
+              <pElem>../ecos_synth_install/include</pElem>
+              <pElem>/opt/ecos/ecos-3.0/packages/net/tcpip/v3_0</pElem>
+              <pElem>/usr/lib/gcc/i486-linux-gnu/4.3/include</pElem>
+              <pElem>/usr/lib/gcc/i486-linux-gnu/4.3/include-fixed</pElem>
+              <pElem>/opt/ecos/ecos-3.0/packages/net/common/v3_0/tests</pElem>
+              <pElem>/opt/ecos/ecos-3.0/packages/net/common/v3_0</pElem>
+              <pElem>/opt/ecos/ecos-3.0/packages/net/common/v3_0/src</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>__ECOS</Elem>
+              <Elem>_KERNEL</Elem>
+            </preprocessorList>
+          </cTool>
+          <ccTool>
+            <incDir>
+              <pElem>../ecos_synth_install/include</pElem>
+              <pElem>/opt/ecos/ecos-3.0/packages/net/tcpip/v3_0/include</pElem>
+              <pElem>/usr/lib/gcc/i486-linux-gnu/4.3/include-fixed</pElem>
+              <pElem>/usr/include</pElem>
+              <pElem>/opt/ecos/ecos-3.0/packages/net/common/v3_0</pElem>
+              <pElem>/opt/ecos/ecos-3.0/packages/net/common/v3_0/src</pElem>
+              <pElem>/opt/ecos/ecos-3.0/packages/net/common/v3_0/tests</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>__ECOS</Elem>
+              <Elem>_KERNEL</Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
